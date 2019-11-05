@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal|PT+Serif|Poppins&display=swap');
+
+body
+{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 5em;
+    margin-bottom: 3em;
+    background-color: #4c5a76;
+}
+
+section#logo
+{
+    color: white;
+    line-height: .25;
+    text-align: center;
+}
+
+section#logo h1
+{
+    font-family: Arsenal, sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-left: 8px;
+    margin-top: 0;
+}
+
+section#logo h2
+{
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    word-spacing: 1px;
+    margin-bottom: 0;
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #F39422;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: unset;
+}
+
+nav ul li
+{
+    margin-right: 20px;
+}
+
+nav ul li:last-child
+{
+    margin-right: 0;
+}
+
+main
+{
+    margin: 0 16px;
+}

@@ -3,35 +3,44 @@
     <head>
         <title>Tholdi - Contact</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
 
     <body>
-        <!-- Header -->
-        <h1>Tholdi</h1>
-        <h6>Storage and Shipping</h6>
+        <header>
+            <!-- Logo -->
+            <section id="logo">
+                <h1>Tholdi</h1>
+                <h2>Storage and Shipping</h2>
+            </section>
 
-        <!-- Navigation -->
-        <ul>
-            <li> <a href="../index.html">Accueil</a> </li>
-            <li> <a href="presentation.html">Présentation de l'entreprise</a> </li>
-            <li> <a href="consultationContainer.html">Consultation des containers</a> </li>
-            <li> <a href="contact.html">Contact</a> </li>
-        </ul>
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li> <a href="../index.html">Accueil</a> </li>
+                    <li> <a href="presentation.html">Présentation de l'entreprise</a> </li>
+                    <li> <a href="consultationContainer.html">Consultation des containers</a> </li>
+                    <li> <a href="contact.html">Contact</a> </li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- Catégorie actuelle -->
-        <h2>Contact</h2>
+        <main>
+            <!-- Catégorie actuelle -->
+            <h2>Contact</h2>
 
-        <!-- Corps -->
-        <form action="send.php" method="post">
-            <p>
-                <input type="text" name="name" placeholder="Votre nom" maxlength="32" autocomplete="off" required>
-                <input type="email" name="mail" placeholder="Votre e-mail" maxlength="32" required><br>
-                <textarea name="msg" rows="8" placeholder="Faites nous savoir ce qu'on peut faire pour vous aider aux mieux" required></textarea>
-            </p>
+            <!-- Corps -->
+            <form action="send.php" method="post">
+                <p>
+                    <input type="text" name="name" placeholder="Votre nom" maxlength="32" autocomplete="off" required>
+                    <input type="email" name="mail" placeholder="Votre e-mail" maxlength="32" required><br>
+                    <textarea name="msg" rows="8" placeholder="Faites nous savoir ce qu'on peut faire pour vous aider aux mieux" required></textarea>
+                </p>
 
-            <p>
-                <input type="submit" value="Envoyer!">
-            </p>
-        </form>
+                <p>
+                    <input type="submit" value="Envoyer!">
+                </p>
+            </form>
+        </main>
     </body>
 </html>
