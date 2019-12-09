@@ -22,18 +22,26 @@
                     <li> <a href="consultationContainer.html">Consultation des containers</a> </li>
                     <li> <a href="contact.html">Contact</a> </li>
                 </ul>
+
+                <ul></ul>
             </nav>
+
+            <!-- English button -->
+            <a href="../en/index.html">EN</a>
         </header>
 
-        <main>
+        <main id="contact">
             <!-- Catégorie actuelle -->
-            <h2>Contact</h2>
+            <h1>Contact</h1>
 
             <!-- Corps -->
             <form action="send.php" method="post">
                 <p>
                     <input type="text" name="name" placeholder="Votre nom" maxlength="32" autocomplete="off" required>
-                    <input type="email" name="mail" placeholder="Votre e-mail" maxlength="32" required><br>
+                    <input type="email" name="mail" placeholder="Votre e-mail" maxlength="32" required>
+                </p>
+                
+                <p>
                     <textarea name="msg" rows="8" placeholder="Faites nous savoir ce qu'on peut faire pour vous aider aux mieux" required></textarea>
                 </p>
 
@@ -42,5 +50,9 @@
                 </p>
             </form>
         </main>
+
+        <footer>
+            <p>&copy; 17/12/2019 | Tholdi</p>
+        </footer>
     </body>
 </html>

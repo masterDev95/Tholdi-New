@@ -1,21 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Arsenal|PT+Serif|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arsenal|PT+Serif|Poppins|Fjalla+One&display=swap');
+
+/* ROOT ELEMENTS */
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 body
 {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+
     font-family: Poppins, sans-serif;
-    margin: 0;
+    min-height: 100%;
 }
 
+/* HEADER */
 header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 2em 5em;
-    margin-bottom: 3em;
     background-color: #4c5a76;
 }
 
+header a
+{
+    color: white;
+    text-decoration: none;
+
+    transition-property: all;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+header a:hover
+{
+    color: #F39422;
+}
+
+/* ---- SECTIONS ---- */
+/* ** LOGO ** */
 section#logo
 {
     color: white;
@@ -29,6 +59,7 @@ section#logo h1
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: 8px;
+
     margin-left: 8px;
     margin-top: 0;
 }
@@ -41,16 +72,7 @@ section#logo h2
     margin-bottom: 0;
 }
 
-nav a
-{
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover
-{
-    color: #F39422;
-}
+/* ---- NAVIGATION ---- */
 
 nav ul
 {
@@ -70,7 +92,182 @@ nav ul li:last-child
     margin-right: 0;
 }
 
+/* ---- MAINS ---- */
+
 main
 {
     margin: 0 16px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    padding: 0 8em;
 }
+
+main p
+{
+    text-align: justify;
+}
+
+/* * Organigramme * */
+main img.organigramme
+{
+    width: 75%;
+    margin: 0 3.5em;
+}
+
+/* ** HOMEPAGE ** */
+main#welcome
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url(../image/welcome.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    margin: 0;
+}
+
+main#welcome h1
+{
+    font-family: 'Fjalla One', Poppins, sans-serif;
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 16px;
+}
+
+main#welcome ul
+{
+    display: flex;
+    justify-content: space-around;
+
+    font-size: larger;
+    padding: 0;
+    list-style: none;
+
+    flex-grow: .5;
+}
+
+main#welcome ul li a
+{
+    padding: 10px;
+
+    border: 2px solid;
+    border-radius: 25px;
+
+    color: inherit;
+    text-decoration: inherit;
+
+    transition-property: all;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+main#welcome ul li a:hover
+{
+    background-color: #F39422;
+    border-color: #F39422;
+}
+
+/* ** CONNTACT ** */
+main#contact h1
+{
+    margin: 0 25%;
+}
+
+main#contact form
+{
+    width: 400px;
+    margin: auto;
+    margin-top: 2.5em;
+    padding: 2.3em 6em;
+
+    background-color: #22313f;
+    border-radius: 16px;
+}
+
+main#contact form p
+{
+    text-align: center;
+}
+
+main#contact form p input
+{
+    margin: 0 5px;
+    padding: 5px;
+
+    font-family: inherit;
+    font-size: 12.6px;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+main#contact form p input:focus
+{
+    border-color: #f62459 !important;
+}
+
+main#contact form p input:not([type="submit"])
+{
+    border: 0;
+    border-bottom: 1px solid;
+}
+
+main#contact form p input[type="submit"]
+{
+    padding: 10px;
+
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+main#contact form p input[type="submit"]:focus
+{
+    color: #f62459;
+}
+
+main#contact form p textarea
+{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+
+    resize: none;
+    font-family: inherit;
+
+    box-shadow: 0 0 0px 0px #22313f;
+}
+
+main#contact form p textarea:focus
+{
+    box-shadow: 0 0 20px 3px #f62459;
+}
+
+main#contact form p input, main#contact form p textarea
+{
+    outline-width: 0;
+    transition: all .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+/* ---- FOOTER ---- */
+
+footer
+{
+    display: table-row;
+
+    background-color: #4c5a76;
+    color: white;
+
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin-left: 2.5em;
+    margin-top: 1.75em;
+}
+ 
