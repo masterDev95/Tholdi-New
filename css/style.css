@@ -74,10 +74,16 @@ section#logo h2
 
 /* ---- NAVIGATION ---- */
 
+nav
+{
+    flex: .75;
+}
+
 nav ul
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    
     list-style: none;
     padding-left: unset;
 }
@@ -205,6 +211,11 @@ main#contact form p input
     color: white;
 }
 
+main#contact form p input:hover
+{
+    border-color: #2574a9 !important;
+}
+
 main#contact form p input:focus
 {
     border-color: #f62459 !important;
@@ -224,6 +235,12 @@ main#contact form p input[type="submit"]
     border-radius: 4px;
 }
 
+main#contact form p input[type="submit"]:hover
+{
+    color: #2574a9;
+    cursor: pointer;
+}
+
 main#contact form p input[type="submit"]:focus
 {
     color: #f62459;
@@ -239,6 +256,11 @@ main#contact form p textarea
     font-family: inherit;
 
     box-shadow: 0 0 0px 0px #22313f;
+}
+
+main#contact form p textarea:hover
+{
+    box-shadow: 0 0 20px 3px #2574a9;
 }
 
 main#contact form p textarea:focus
