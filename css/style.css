@@ -48,7 +48,7 @@ header a
 {
     color: white;
 
-    transition-property: all;
+    transition-property: color;
     transition-duration: .25s;
     transition-timing-function: ease-out;
 }
@@ -71,7 +71,7 @@ section#logo
 section#logo h1
 {
     font-family: Arsenal, sans-serif;
-    font-size: 36px;
+    font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: 8px;
 
@@ -82,8 +82,8 @@ section#logo h1
 section#logo h2
 {
     font-family: 'PT Serif', serif;
-    font-size: 14px;
-    word-spacing: 1px;
+    font-size: .8em;
+    word-spacing: .05em;
     margin-bottom: 0;
 }
 
@@ -128,6 +128,13 @@ main
     padding: 0 8em;
 }
 
+main > h1
+{
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 0.05em;
+}
+
 main p
 {
     text-align: justify;
@@ -152,10 +159,10 @@ main#welcome
 main#welcome h1
 {
     font-family: 'Fjalla One', Poppins, sans-serif;
-    font-size: 64px;
+    font-size: 5em;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 16px;
+    letter-spacing: .25em;
 }
 
 main#welcome ul
@@ -163,7 +170,7 @@ main#welcome ul
     display: flex;
     justify-content: space-around;
 
-    font-size: larger;
+    font-size: 1.25em;
     padding: 0;
     list-style: none;
 
@@ -172,7 +179,7 @@ main#welcome ul
 
 main#welcome ul li a
 {
-    padding: 10px;
+    padding: .7em;
 
     border: 2px solid;
     border-radius: 25px;
@@ -199,6 +206,44 @@ main img.organigramme
     margin: 0 3.5em;
 }
 /* #endregion * Organigramme * */
+
+/* #region ** CONSULTATION CONTAINERS ** */
+main#consult-container article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-top: 3em;
+}
+
+section#container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+section#container:first-child
+{
+    margin-bottom: 3em;
+}
+
+section#container section
+{
+    width: 480px;
+}
+
+section#container section h1
+{
+    font-size: 1.25em;
+}
+
+section#container section figure figcaption
+{
+    display: none;
+}
+/* #endregion ** CONSULTATION CONTAINERS ** */
 
 /* #region ** CONTACT ** */
 main#contact h1
