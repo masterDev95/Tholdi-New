@@ -18,6 +18,12 @@ body
     min-height: 100%;
 }
 
+a
+{
+    text-decoration: none;
+    color: initial;
+}
+
 /* HEADER */
 header
 {
@@ -32,7 +38,6 @@ header
 header a
 {
     color: white;
-    text-decoration: none;
 
     transition-property: all;
     transition-duration: .25s;
@@ -183,11 +188,51 @@ main#contact h1
     margin: 0 25%;
 }
 
+section#contact-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 2.5em;
+}
+
+address a
+{
+    color: #f62459;
+}
+
+#address-block
+{
+    display: flex;
+    margin-bottom: 2em;
+    line-height: 2;
+}
+
+#address-block div[id^="icon"]
+{
+    align-self: center;
+    margin-right: 1.5em;
+}
+
+#address-block #icon-tel::before
+{
+    content: url("../image/phone_24.svg");
+}
+
+#address-block #icon-mail::before
+{
+    content: url("../image/mail_24.svg");
+}
+
+#address-block #info p
+{
+    margin: 0;
+}
+
 main#contact form
 {
     width: 400px;
     margin: auto;
-    margin-top: 2.5em;
     padding: 2.3em 6em;
 
     background-color: #22313f;
@@ -268,10 +313,21 @@ main#contact form p textarea:focus
     box-shadow: 0 0 20px 3px #f62459;
 }
 
+main#contact form p input
+{
+    transition-property: border, color;
+}
+
+main#contact form p textarea
+{
+    transition-property: box-shadow;
+}
+
 main#contact form p input, main#contact form p textarea
 {
     outline-width: 0;
-    transition: all .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
 /* ---- FOOTER ---- */

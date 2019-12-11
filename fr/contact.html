@@ -33,20 +33,42 @@
             <h1>Contact</h1>
 
             <!-- Corps -->
-            <form action="send.php" method="post">
-                <p>
-                    <input type="text" name="name" placeholder="Votre nom" maxlength="32" autocomplete="off" required>
-                    <input type="email" name="mail" placeholder="Votre e-mail" maxlength="32" required>
-                </p>
-                
-                <p>
-                    <textarea name="msg" rows="8" placeholder="Faites nous savoir ce qu'on peut faire pour vous aider aux mieux" required></textarea>
-                </p>
+            <section id="contact-container">
+                <address>
+                    <div id="address-block">
+                        <div id="icon-tel"></div>
+                        <div id="info">
+                            <p>Téléphone</p>
+                            <a href="tel:+33158694817">01 58 69 48 17</a>
+                        </div>
+                    </div>
 
-                <p>
-                    <input type="submit" value="Envoyer!">
-                </p>
-            </form>
+                    <div id="address-block">
+                        <div id="icon-mail"></div>
+                        <div id="info">
+                            <p>Email</p>
+                            <a href="mailto:support@tholdi.fr">support@tholdi.fr</a>
+                        </div>
+                    </div>
+                </address>
+                
+                <aside>
+                    <form action="send.php" method="post">
+                        <p>
+                            <input type="text" name="name" placeholder="Votre nom" maxlength="32" autocomplete="off" required>
+                            <input type="email" name="mail" placeholder="Votre e-mail" maxlength="32" required>
+                        </p>
+                        
+                        <p>
+                            <textarea name="msg" rows="8" placeholder="Faites nous savoir ce qu'on peut faire pour vous aider aux mieux" required></textarea>
+                        </p>
+        
+                        <p>
+                            <input type="submit" value="Envoyer!">
+                        </p>
+                    </form>
+                </aside>
+            </section>
         </main>
 
         <footer>
