@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Arsenal|PT+Serif|Poppins|Fjalla+One&display=swap');
 
-/* ROOT ELEMENTS */
+/* #region ROOT ELEMENTS */
 html, body
 {
     height: 100%;
@@ -24,7 +24,16 @@ a
     color: initial;
 }
 
-/* HEADER */
+::selection
+{
+    background-color: #f62459;
+    color: white;
+}
+
+/* #endregion ROOT ELEMENTS */
+
+/* #region ---- HEADER ---- */
+/* #region ** HEADER ** */
 header
 {
     display: flex;
@@ -49,8 +58,9 @@ header a:hover
     color: #F39422;
 }
 
-/* ---- SECTIONS ---- */
-/* ** LOGO ** */
+/* #endregion ** HEADER ** */
+
+/* #region ** LOGO ** */
 section#logo
 {
     color: white;
@@ -77,7 +87,9 @@ section#logo h2
     margin-bottom: 0;
 }
 
-/* ---- NAVIGATION ---- */
+/* #endregion ** LOGO ** */
+
+/* #region ** NAVIGATION ** */
 
 nav
 {
@@ -103,8 +115,11 @@ nav ul li:last-child
     margin-right: 0;
 }
 
-/* ---- MAINS ---- */
+/* #endregion ** NAVIGATION ** */
+/* #endregion ---- HEADER ---- */
 
+/* #region ---- MAIN ---- */
+/* #region ** ALL ** */
 main
 {
     margin: 0 16px;
@@ -117,15 +132,9 @@ main p
 {
     text-align: justify;
 }
+/* #endregion ** ALL ** */
 
-/* * Organigramme * */
-main img.organigramme
-{
-    width: 75%;
-    margin: 0 3.5em;
-}
-
-/* ** HOMEPAGE ** */
+/* #region ** HOMEPAGE ** */
 main#welcome
 {
     display: flex;
@@ -181,11 +190,20 @@ main#welcome ul li a:hover
     background-color: #F39422;
     border-color: #F39422;
 }
+/* #endregion ** HOMEPAGE ** */
 
-/* ** CONNTACT ** */
+/* #region * Organigramme * */
+main img.organigramme
+{
+    width: 75%;
+    margin: 0 3.5em;
+}
+/* #endregion * Organigramme * */
+
+/* #region ** CONTACT ** */
 main#contact h1
 {
-    margin: 0 25%;
+    text-align: center;
 }
 
 section#contact-container
@@ -196,6 +214,13 @@ section#contact-container
     margin-top: 2.5em;
 }
 
+address
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 address a
 {
     color: #f62459;
@@ -204,8 +229,13 @@ address a
 #address-block
 {
     display: flex;
+    
+    padding: 16px;
+    padding-top: 0;
     margin-bottom: 2em;
     line-height: 2;
+
+    border-bottom: 1px solid;
 }
 
 #address-block div[id^="icon"]
@@ -224,14 +254,24 @@ address a
     content: url("../image/mail_24.svg");
 }
 
+#address-block #icon-address::before
+{
+    content: url("../image/address_24.svg");
+}
+
 #address-block #info p
 {
     margin: 0;
 }
 
+#address-block:last-child
+{
+    margin-bottom: 0;
+}
+
 main#contact form
 {
-    width: 400px;
+    width: 500px;
     margin: auto;
     padding: 2.3em 6em;
 
@@ -270,6 +310,8 @@ main#contact form p input:not([type="submit"])
 {
     border: 0;
     border-bottom: 1px solid;
+
+    width: 192px;
 }
 
 main#contact form p input[type="submit"]
@@ -278,6 +320,8 @@ main#contact form p input[type="submit"]
 
     border: 1px solid;
     border-radius: 4px;
+
+    width: 96px;
 }
 
 main#contact form p input[type="submit"]:hover
@@ -330,7 +374,10 @@ main#contact form p input, main#contact form p textarea
     transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
-/* ---- FOOTER ---- */
+/* #endregion ** CONTACT ** */
+/* #endregion ---- MAIN ---- */
+
+/* #region ---- FOOTER ---- */
 
 footer
 {
@@ -348,4 +395,6 @@ footer p {
     margin-left: 2.5em;
     margin-top: 1.75em;
 }
+
+/* #endregion ---- FOOTER ---- */
  
