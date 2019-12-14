@@ -636,6 +636,20 @@
             }
         }
 
+        @media screen and (max-width: 360px) and (max-height: 480px)
+        {
+            main#welcome ul li a
+            {
+                border: 0;
+            }
+
+            main#welcome ul li a:hover
+            {
+                background-color: unset;
+                color: #F39422;
+            }
+        }
+
     /* #endregion */
     
     /* #region Desktop: 320px max */
