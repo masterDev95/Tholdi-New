@@ -484,6 +484,33 @@
 
 /* #region ---- MEDIA QUERIES ---- */
 
+    /* #region Desktop: 1280px max */
+
+    @media screen and (max-width: 1280px)
+    {
+        main#consult-container
+        {
+            padding: 0 2em;
+        }
+
+        section#container section
+        {
+            width: 350px;
+        }
+
+        section#container section figure img 
+        {
+            width: 100%;
+        }
+        
+        main#contact
+        {
+            padding: 0;
+        }
+    }
+
+    /* #endregion */
+
     /* #region Desktop: 1200px max */
 
         @media screen and (max-width: 1200px)
@@ -517,11 +544,6 @@
             {
                 width: 256px;
             }
-
-            section#container section figure img 
-            {
-                width: 100%;
-            }
         }
     /* #endregion */
 
@@ -532,6 +554,11 @@
             main#consult-container
             {
                 padding: 0;
+            }
+
+            main#contact address #address-block
+            {
+                border: 0;
             }
         }
 
@@ -549,6 +576,27 @@
             main#welcome
             {
                 font-size: 10px;
+            }
+
+            main#contact
+            {
+                padding: 0;
+                margin: 2em 0;
+            }
+
+            section#contact-container
+            {
+                flex-direction: column;
+            }
+
+            section#contact-container address
+            {
+                flex-direction: row;
+            }
+
+            #address-block:last-child
+            {
+                flex-shrink: 2;
             }
         }
 
