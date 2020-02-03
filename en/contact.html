@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Tholdi - Contact</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Logo -->
+            <section id="logo">
+                <h1>Tholdi</h1>
+                <h2>Storage and Shipping</h2>
+            </section>
+
+            <!-- Responsive nav -->
+            <a class="nav-toggle" href="#">&#9776;</a>
+            
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="presentation.html">Company presentation</a> </li>
+                    <li> <a href="containerConsultation.html">Containers consultation</a> </li>
+                    <li> <a href="contact.html">Contact</a> </li>
+                    <!-- French button -->
+                    <li> <a href="../index.html">FR</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="contact">
+            <!-- Catégorie actuelle -->
+            <h1>Contact</h1>
+
+            <!-- Corps -->
+            <section id="contact-container">
+                <address>
+                    <div id="address-block">
+                        <div id="icon-tel"></div>
+                        <div id="info">
+                            <p>Phone</p>
+                            <a href="tel:+33158694817">FR: 01 58 69 48 17</a><br>
+                            <a href="tel:+441632960111">UK: 01632 960111</a>
+                        </div>
+                    </div>
+
+                    <div id="address-block">
+                        <div id="icon-mail"></div>
+                        <div id="info">
+                            <p>E-mail</p>
+                            <a href="mailto:support@tholdi.fr">support@tholdi.fr</a>
+                        </div>
+                    </div>
+
+                    <div id="address-block">
+                        <div id="icon-address"></div>
+                        <div id="info">
+                            <p>Address</p>
+                            <a href="https://www.google.com/maps/place/7+Rue+Joseph+Bouyssel,+78700+Conflans-Sainte-Honorine" target="_blank">7 Rue Joseph Bouyssel,<br>78700 Conflans-Sainte-Honorine</a>
+                        </div>
+                    </div>
+                </address>
+                
+                <aside>
+                    <form action="send.php" method="post">
+                        <p>
+                            <input type="text" name="name" placeholder="Your name" maxlength="32" autocomplete="off" required>
+                            <input type="email" name="mail" placeholder="Your e-mail" maxlength="32" required>
+                        </p>
+                        
+                        <p>
+                            <textarea name="msg" rows="8" placeholder="Let us know what we can do to help you better" required></textarea>
+                        </p>
+        
+                        <p>
+                            <input type="submit" value="Send!">
+                        </p>
+                    </form>
+                </aside>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 17/12/2019 | Tholdi</p>
+        </footer>
+    </body>
+</html>
